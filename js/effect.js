@@ -228,7 +228,8 @@ $('document').ready(function(){
 			// $("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
 				$("p:nth-child("+i+")").fadeIn('slow').delay(1000).promise().done(function(){
-					if(i==10){}
+					document.scrollingElement.scrollTop=document.scrollingElement.scrollHeight;
+					if(i==100){}
 					else{
 						msgLoop(i);
 					}
